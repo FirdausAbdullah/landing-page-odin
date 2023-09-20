@@ -2,6 +2,8 @@
     --main-color: #1F2937;
     --main-letter:#F9FAF8;
     --light-letter:#E5E7EB;
+    --contra-color: #1F2937;
+    --button-blue: #3882F6;
 }
 
 *{
@@ -12,10 +14,10 @@
 /*header*/
 
 .head{
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
 }
 .head header{
     display: flex;
@@ -56,8 +58,6 @@
 }
 
 .head .nav ul{
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -107,9 +107,110 @@
 }
 
 .btn{
-    background-color: #3882F6;
+    background-color: var(--button-blue);
     padding: 10px 30px;
-    border-radius: 20px;
+    border-radius: 10px;
     border-style: none;
+    font-size: 18px;
+}
+
+
+/*INFO*/
+.info{
+    width: 100%;
+}
+
+.info h1{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    font-weight: bolder;
+    color:var(--contra-color);
+}
+
+.info .placeholder-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 3px solid var(--button-blue);
+}
+
+.info p{
+    text-align: center;
+    width: 200px;
+}
+
+.info-container{
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    gap:30px;
+    padding: 30px 0 ;
+}
+
+.quote{
+    width: 100%;
+    padding: 70px 0;
+    background-color: var(--light-letter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+.quote h1{
+    width: 50%;
+    text-align: center;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: var(--contra-color);
+}
+.quote .name{
+    width: 40%;
+    text-align: right;
+    font-weight: bold;
+}
+
+/*Call to action*/
+.action-container {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:70px 0;
+}
+.action-call {
+    width: 70%;
+    border-radius: 10px;
+    background-color: var(--button-blue);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+.btn-border {
+    border: 1px solid white;
+}
+
+.separator h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color:var(--main-letter)
+}
+
+.separator p {
+    font-size: 18px;
+    color:var(--light-letter)
+}
+
+/*footer*/
+
+.foot {
+    width: 100%;
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 20px 0;
+    color: var(--light-letter);
     font-size: 18px;
 }
